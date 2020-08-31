@@ -122,7 +122,17 @@ lilFootText3.textContent = 'sales@greatidea.io'
 const touchFoot = document.querySelector('footer p')
 touchFoot.textContent = 'Copyright Great Idea! 2018'
 
+let p = document.createElement("p")
+document.body.appendChild(p)
 
+var parent = document.createElement("div")
+var para = document.createElement("p")
+var span = document.createElement("span")
+parent.append(para)
+parent.prepend(span)
+
+console.log(parent.childNodes)
+ // NodeList [ <span>, <p> ]
 
 
 //'123 Way 456 Street Somewhere, USA 1 (888) 888-8888 sales@greatidea.io' 
