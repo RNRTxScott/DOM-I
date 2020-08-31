@@ -55,6 +55,14 @@ thirdNav.textContent = 'Features'
 fourthNav.textContent = 'About'
 fifthNav.textContent = 'Contact'
 
+topNav.style.color = 'Green'
+firstNav.style.color = 'Green'
+secondNav.style.color = 'Green'
+thirdNav.style.color = 'Green'
+fourthNav.style.color = 'Green'
+fifthNav.style.color = 'Green'
+
+
 const imgPusher = document.querySelector('#cta-img')
 imgPusher.src= 'img/header-img.png'
 
@@ -65,3 +73,13 @@ btnTxtPusher.textContent = 'Get Started'
 
 const midTopText = document.querySelector('.top-content')
 midTopText.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const secImgPusher = document.querySelector('#middle-img')
+secImgPusher.src = 'img/mid-page-accent.jpg'
+
+const botText = document.querySelector('.bottom-content')
+botText.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const bigFoot = document.querySelector('footer')
+bigFoot.textContent = '123 Way 456 Street Somewhere, USA 1 (888) 888-8888 sales@greatidea.io' 
+
