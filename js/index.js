@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
+
 const topNav = document.querySelector('a')
 const firstNav = topNav.nextElementSibling
 const secondNav = firstNav.nextElementSibling
@@ -48,6 +50,7 @@ const thirdNav = secondNav.nextElementSibling
 const fourthNav = thirdNav.nextElementSibling
 const fifthNav = fourthNav.nextElementSibling
 const sixthNav = fifthNav.nextElementSibling
+
 topNav.textContent = 'Services'
 firstNav.textContent = 'Product'
 secondNav.textContent = 'Vision'
@@ -71,15 +74,56 @@ txtPusher.textContent = 'DOM IS AWESOME'
 const btnTxtPusher = document.querySelector('button')
 btnTxtPusher.textContent = 'Get Started'
 
+
+
+// document.createElement('.top-content h4')
+// document.createElement('.bottom-content h4')
+const wholeTop = document.querySelector('.top-content')
+const oneMid = document.querySelector('.top-content h4')
+const oneMidText = document.querySelector('.top-content p')
+
+
+
+oneMid.textContent = 'Features'
+oneMidText.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, atimperdiet metusscelerisque quis.'
+
+
+const secImgPusher = document.querySelector('.middle-img')
+secImgPusher.src = 'img/mid-page-accent.jpg'
+/*
 const midTopText = document.querySelector('.top-content')
 midTopText.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
-const secImgPusher = document.querySelector('#middle-img')
+const secImgPusher = document.querySelector('.middle-img #middle-img')
 secImgPusher.src = 'img/mid-page-accent.jpg'
 
 const botText = document.querySelector('.bottom-content')
 botText.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+*/
+const oneLow = document.querySelector('.bottom-content h4')
+const oneLowText = document.querySelector('.bottom-content p')
 
-const bigFoot = document.querySelector('footer')
-bigFoot.textContent = '123 Way 456 Street Somewhere, USA 1 (888) 888-8888 sales@greatidea.io' 
+oneLow.textContent = 'Services'
+oneLowText.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, atimperdiet metusscelerisque quis.'
+
+const bigFootTitle = document.querySelector('.contact h4')
+const bigFootText1 = document.querySelector('.contact p')
+const lilFootText2 = bigFootText1.nextElementSibling
+const lilFootText3 = lilFootText2.nextElementSibling
+//const lilFootText4 = lilFootText3.nextElementSibling
+
+
+bigFootTitle.textContent = 'Contact'
+bigFootText1.textContent = '123 Way 456 Street Somewhere, USA'
+lilFootText2.textContent = '1 (888) 888-8888'
+lilFootText3.textContent = 'sales@greatidea.io'
+
+
+const touchFoot = document.querySelector('footer p')
+touchFoot.textContent = 'Copyright Great Idea! 2018'
+
+
+
+
+//'123 Way 456 Street Somewhere, USA 1 (888) 888-8888 sales@greatidea.io' 
 
