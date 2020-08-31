@@ -78,34 +78,39 @@ btnTxtPusher.textContent = 'Get Started'
 
 // document.createElement('.top-content h4')
 // document.createElement('.bottom-content h4')
+/*
 const wholeTop = document.querySelector('.top-content')
 const oneMid = document.querySelector('.top-content h4')
-const oneMidText = document.querySelector('.top-content p')
+const oneMidText = document.querySelector('.top-content .text-content p')
+*/
 
 
+const wholeTop = document.querySelector('.main-content .top-content .text-content ')
+wholeTop.children[0].textContent = "Features"
+wholeTop.children[1].textContent = siteContent['main-content']['features-content']
 
+wholeTop.nextElementSibling.children[0].textContent = "About"
+wholeTop.nextElementSibling.children[1].textContent = siteContent['main-content']['about-content']
+
+const wholeBottom = document.querySelector('.main-content .bottom-content .text-content')
+wholeBottom.children[0].textContent = 'Services'
+wholeBottom.children[1].textContent = siteContent['main-content']['services-content']
+
+/*
 oneMid.textContent = 'Features'
 oneMidText.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, atimperdiet metusscelerisque quis.'
-
+*/
 
 const secImgPusher = document.querySelector('.middle-img')
 secImgPusher.src = 'img/mid-page-accent.jpg'
+
 /*
-const midTopText = document.querySelector('.top-content')
-midTopText.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-
-const secImgPusher = document.querySelector('.middle-img #middle-img')
-secImgPusher.src = 'img/mid-page-accent.jpg'
-
-const botText = document.querySelector('.bottom-content')
-botText.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-*/
 const oneLow = document.querySelector('.bottom-content h4')
 const oneLowText = document.querySelector('.bottom-content p')
 
 oneLow.textContent = 'Services'
 oneLowText.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, atimperdiet metusscelerisque quis.'
-
+*/
 const bigFootTitle = document.querySelector('.contact h4')
 const bigFootText1 = document.querySelector('.contact p')
 const lilFootText2 = bigFootText1.nextElementSibling
@@ -131,7 +136,7 @@ var span = document.createElement("span")
 parent.append(para)
 parent.prepend(span)
 
-console.log(parent.childNodes)
+// console.log(parent.childNodes)
  // NodeList [ <span>, <p> ]
 
 
