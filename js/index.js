@@ -96,6 +96,14 @@ const wholeBottom = document.querySelector('.main-content .bottom-content .text-
 wholeBottom.children[0].textContent = 'Services'
 wholeBottom.children[1].textContent = siteContent['main-content']['services-content']
 
+wholeBottom.nextElementSibling.children[0].textContent = 'Product'
+wholeBottom.nextElementSibling.children[1].textContent = siteContent['main-content']['product-content']
+
+//const bigBottom3 = wholeBottom.lastElementChild.textContent = 'Vision'
+
+// holeBottom.nextElementSibling.children.[0].textContent = 'Vision'
+
+
 /*
 oneMid.textContent = 'Features'
 oneMidText.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, atimperdiet metusscelerisque quis.'
